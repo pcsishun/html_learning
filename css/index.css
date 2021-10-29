@@ -1,0 +1,13 @@
+.inline-css{
+    color:rgb(53, 53, 88);
+    font-weight: bold;
+}
+
+.underline{
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+
+.text-color-blue{
+    color: rgb(71, 71, 105);
+}
