@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box; /* ล๊อคกรอบไว้ */
+    font-family: 'Prompt', sans-serif;
+}
+
+.title{
+    color:rgb(0, 0, 0);
+    margin-bottom: 2.5%;
+    text-transform: uppercase;
+    position:relative;
+    text-align:right; /* text-align ข้อความชิดขวา*/
+    margin-bottom: 3%;
+}
+
+.title::before{
+    content: '';
+    position:absolute;
+    top:23px;
+    right:0px;
+    width:70px;
+    height:3px;
+    background:black;
+}
+
+.left{
+    background-color: #3f4247;
+    width:300px;
+    padding:0 20px;
+}
+
+/* .left .icon{
+    font-size: 20px;
+    color:rgb(207, 204, 204)
+} */
+
+/* .left .text{
+    color:rgb(207, 204, 204)
+} */
+
+
+.left .image {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.left .image img{
+    width: 200px;
+    border-radius: 30px;
+}
+
+.contact{
+    border: 1px solid red;
+    left:50px;
+ 
+}
+
+.contact .li_wrap {
+    display:flex;
+    align-items: center; 
+    width:100%;
+    margin-bottom:10px;
+ 
+
+}
+
+.contact .li_wrap .icon {
+    width:35px;
+    height: 35px;
+    background: #fff;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+
+}
+
+.contact .li_wrap .text {
+    width: calc(100% - 50px);
+    word-break: break-word;
+    color:#fff;
+    margin-right: 25px;
+ 
+}
+
+
+.skills{
+    border: 1px solid red;
+    left:50px;
+ 
+}
+
+.skills .li_wrap {
+    display:flex;
+    align-items: center; 
+    width:100%;
+    margin-bottom:10px;
+ 
+
+}
+
+.skills .li_wrap .icon {
+    width:35px;
+    height: 35px;
+    background: #fff;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+
+}
+
+.skills .li_wrap .text {
+    width: calc(100% - 50px);
+    word-break: break-word;
+    color:#fff;
+    margin-right: 25px;
+ 
+}
