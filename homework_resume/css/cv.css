@@ -110,8 +110,46 @@
     border-radius: 15px;
 }
 
- 
 
 .skills .li_wrap .text .hobbies .li_wrap .text {
     margin-top:5px; 
 }
+
+
+.hobbies ul{
+    border: 1px solid red;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+ 
+}
+
+.hobbies .li_wrap {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    border-radius: 15px;
+}
+
+.hobbies .li_wrap:hover {
+    background-color: #fff;
+}
+
+.hobbies .li_wrap .text {
+ margin-top: 5px;
+}
+
+.hobbies .li_wrap  {
+    border:2px solid #fff;
+   }
+
+.hobbies .li_wrap .icon .hobbies .li_wrap .text   {
+    color: #fff;
+   }
+
+ 
