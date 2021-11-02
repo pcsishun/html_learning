@@ -14,8 +14,8 @@
     <style>
         .slide-top {
             margin-bottom: 50px;
-            -webkit-animation: slide-top 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-                    animation: slide-top 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            -webkit-animation: slide-top 0.9s cubic-bezier(0.0, 0.0, 0.0, 0.0) both;
+                    animation: slide-top 0.9s cubic-bezier(0.0, 0.0, 0.0, 0.0) both;
         }
  
         @-webkit-keyframes slide-top {
@@ -34,21 +34,11 @@
                     transform: translateY(0);
             }
             100% {
-            -webkit-transform: translateY(60px);
-                    transform: translateY(60px);
+            -webkit-transform: translateY(30px);
+                    transform: translateY(30px);
             }
         }
-  
-    </style>
-    <style>
-        .skilltage:nth-child(2n-1) {
-            float:left;
-            margin: 0;
-        }
-        
-        .skilltage:nth-child(2n) {
-            margin-left: 5%;  
-        }
+
         hr{
             border: 0;
             height: 1px;
@@ -59,8 +49,46 @@
             background-color: rgb(245, 236, 226);
             font-family: 'Prompt', sans-serif;
         }
+
+        .row-skill:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .row-skill{
+            margin-left: 20%;
+        }
+
+
+        .col-skill{
+            float: left;
+            width: 25%
+
+        }
+
+        .col-img{
+            float: left;
+            width:50%;
+ 
+        }
+        
+        .row-img{
+            content: "";
+            display: table;
+            clear: both;
+ 
+ 
+        }
+
+        .box-msg{
+            padding-top: 20%;
+   
+        }
+ 
         
     </style>
+ 
     <title>RESUME</title>
 </head>
 <body>
@@ -81,20 +109,30 @@
             <li class="nav-item">
                 <a class="nav-link" href="../htmlclass2/index.html"><b>HtmlClass2</b></a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html_css/class3.html"><b>Html_CSS</b></a>
+              </li>
           </ul>
         </div>
       </nav>
-    
-    <div class="container">
-        <img class="slide-top" src="../hololivedoc/img/Shion.png" height="200" width="200"> 
-            <div style="margin-left: 3%; margin-top: 1%"> 
-               <span><strong>Address</strong> 799/126 Chiang-mai, Mung, Paidat, 50100 </span>
-               <br>
-               <span><strong>Phone</strong> +66(0)69 635 2605</span>
-               <br>
-               <span><strong>Email</strong> pcsishun@gmail.com</span>
+    <br>
+   
+        <div class="container">
+            <div class="row-img">
+                <div class="col-img">
+                    <img class="slide-top" src="../hololivedoc/img/Shion.png" height="200" width="200">     
+                </div>  
+                <div class="col-img box-msg">
+                    <span><strong>Address</strong> 799/126 Chiang-mai, Mung, Paidat, 50100 </span>
+                    <br>
+                    <span><strong>Phone</strong> +66(0)69 635 2605</span>
+                    <br>
+                    <span><strong>Email</strong> pcsishun@gmail.com</span>     
+                </div>  
             </div>
-        <br>
+        </div>
+
+ 
         <hr>
     </div>
     <div class="container">
@@ -148,27 +186,32 @@
 
     <div class="container">
         <h4><u>Skill</u>: </h4>
-        <div style="margin-left: 20%;">
-            <p><b>Coding: </b></p>
-            <ul class="skilltage">
-                <li>R-programming</li>
-                <li>Python</li>
-                <li>MSSQL</li>
-                <li>MySQL</li>
-                <li>php </li>
-                <li>js</li>
-                <li>HTML</li>
-            </ul>
-            <p><b>Framework:</b></p>
-            <ul class="skilltage">
-                <li>Laravel</li>
-                <li>NodeJS</li>
-                <li>Flask</li>
-            </ul>
-        </div>
+        <div class="row-skill">
+            <div class="col-skill">
+                <p><b>Coding: </b></p>
+                <div class="skill-text">
+                    <li class="skill-text-p"><span>R-programming</span></li>
+                    <li class="skill-text-p"><span>Python</span></li>
+                    <li class="skill-text-p"><span>MSSQL</span></li>
+                    <li class="skill-text-p"><span>MySQL</span></li>
+                    <li class="skill-text-p"><span>php</span></li>
+                    <li class="skill-text-p"><span>js</span></li>
+                    <li class="skill-text-p"><span>HTML</span></li>
+                </div>
 
-        <br>    
-        <hr>
+            </div>
+            <div  class="col-skill">
+                <p><b>Framework:</b></p>
+                <div class="skill-text">
+                    <li class="skill-text-p"><span>Laravel</span></li>
+                    <li class="skill-text-p"><span>NodeJS</span></li>
+                    <li class="skill-text-p"><span>Flask</span></li>
+                </div>
+
+            </div>
+        </div>    
     </div>
+    </div>
+    <br>
 </body> 
 </html>
